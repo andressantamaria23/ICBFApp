@@ -1,0 +1,60 @@
+﻿@page
+@model ICBFApp.Pages.Asistencia.CrearAsistenciaModel
+@{
+}
+<div class="container">
+    <form method="POST">
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">NIÑO</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="FK_niño" value="@Model.asistenciaInfo.FK_niño">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Fecha</label>
+            <div class="col-sm-6">
+                <input type="date" class="form-control" name="Fecha" value="@Model.asistenciaInfo.Fecha">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label" for="SelectedEstado">Selecciona estado:</label>
+            <div class="col-sm-6">
+                <select name="Estado" class="form-control">
+                    <option value="@Model.asistenciaInfo">Selecciona estado </option>
+                    <option value="@Model.asistenciaInfo">Presente</option>
+                    <option value="@Model.asistenciaInfo">Ausente</option>
+                </select>
+            </div>
+        </div>
+        @if (!string.IsNullOrEmpty(Model.successMessage))
+        {
+            <div class="row mb-3">
+                <div class="col-sm-9">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>@Model.successMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(Model.errorMessage))
+        {
+            <div class="row mb-3">
+                <div class="col-sm-9">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>@Model.errorMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="row mb-3">
+            <div class="offset-sm-3 col-sm-3 d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-sm-3 d-grid">
+                <a class="btn btn-outline-primary" role="button" href="/Asistencia/Index">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>

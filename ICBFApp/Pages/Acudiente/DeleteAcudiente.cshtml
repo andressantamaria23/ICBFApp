@@ -1,0 +1,13 @@
+﻿@page
+@model ICBFApp.Pages.Acudiente.DeleteModel
+@{
+}
+<h2>Eliminar  Acudiente</h2>
+
+<p>¿Estás seguro que deseas eliminar este Acudiente?</p>
+
+<form method="post">
+    <input type="hidden" asp-for="Id_acudiente" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-page="/Acudiente/Index" class="btn btn-secondary">Cancelar</a>
+</form>

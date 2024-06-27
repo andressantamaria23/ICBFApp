@@ -1,0 +1,73 @@
+﻿@page
+@model ICBFApp.Pages.Usuario.CrearUsuarioModel
+@{
+}
+<div class="container">
+    <form method="POST">
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Nombre Usuario</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="nom_usuario" value="@Model.usuarioInfo.nom_usuario">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Apellido Usuario</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="apell_usuario" value="@Model.usuarioInfo.apell_usuario">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Email Usuario</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="email" value="@Model.usuarioInfo.email">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Contraseña Usuario</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="contrasena" value="@Model.usuarioInfo.Contrasena">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label" for="Selectedidentificacion">Selecciona un Rol:</label>
+            <div class="col-sm-6">
+                <select name="rol" class="form-control">
+                    <option value="">Selecciona un rol</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.successMessage))
+        {
+            <div class="row mb-3">
+                <div class="col-sm-9">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>@Model.successMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(Model.errorMessage))
+        {
+            <div class="row mb-3">
+                <div class="col-sm-9">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>@Model.errorMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="row mb-3">
+            <div class="offset-sm-3 col-sm-3 d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-sm-3 d-grid">
+                <a class="btn btn-outline-primary" role="button" href="/Usuario/Index">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>

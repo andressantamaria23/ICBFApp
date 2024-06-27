@@ -1,0 +1,37 @@
+﻿@page
+@model ICBFApp.Pages.MadreComunitaria.IndexModel
+@{
+}
+<br />
+<h2>Lista de Madre Comunitaria</h2>
+
+<a class="btn btn-primary btn-sm" href="/MadreComunitaria/CreateMadre">Nueva Madre Comunitaria</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Teléfono</td>
+            <td>Dirección</td>
+            <td>Fecha Nacimiento</td>
+            <td>Acciones</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listMadre)
+        {
+            <tr>
+                <td>@item.Id_Madre</td>
+                <td>@item.Nombres</td>
+                <td>@item.Telefono</td>
+                <td>@item.Direccion</td>
+                <td>@item.FechaNacimiento.ToShortDateString()</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/MadreComunitaria/Editar?Id_Madre=@item.Id_Madre">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="/MadreComunitaria/DeleteMadre?Id_Madre=@item.Id_Madre">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

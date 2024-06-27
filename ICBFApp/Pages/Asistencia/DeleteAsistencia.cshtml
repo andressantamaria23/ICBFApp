@@ -1,0 +1,13 @@
+﻿@page
+@model ICBFApp.Pages.Asistencia.DeleteAsistenciaModel
+@{
+}
+<h2>Eliminar  Asistencia</h2>
+
+<p>¿Estás seguro que deseas eliminar esta asistencia?</p>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-page="/Asistencia/Index" class="btn btn-secondary">Cancelar</a>
+</form>

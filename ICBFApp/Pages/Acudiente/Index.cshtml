@@ -1,0 +1,37 @@
+﻿@page
+@model ICBFApp.Pages.Acudiente.IndexModel
+@{
+}
+<br />
+<h2>Lista de Acudiente</h2>
+
+<a class="btn btn-primary btn-sm" href="/Acudiente/CrearAcudiente">Nuevo Acudiente</a>
+
+<table class="table">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>nombre</td>
+			<td>cedula</td>
+			<td>telefono</td>
+			<td>direccion</td>
+			<td>acciones</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listAcudiente )
+		{
+			<tr>
+				<td>@item.Id_acudiente</td>
+				<td>@item.Nombre</td>
+				<td>@item.Cedula</td>
+				<td>@item.Telefono</td>
+				<td>@item.Direccion</td>
+				<td>
+					<a class="btn btn-primary btn-sm" href="/Acudiente/Editar?Id_acudiente=@item.Id_acudiente">Editar</a>
+					<a class="btn btn-danger btn-sm" href="/Acudiente/DeleteAcudiente?Id_acudiente=@item.Id_acudiente">Eliminar</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

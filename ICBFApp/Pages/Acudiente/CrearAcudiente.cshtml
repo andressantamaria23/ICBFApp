@@ -1,0 +1,63 @@
+﻿@page
+@model ICBFApp.Pages.Acudiente.CrearAcudienteModel
+@{
+}
+<div class="container">
+    <form method="POST">
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Nombre Acudiente</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Nombre" value="@Model.acudienteInfo.Nombre">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Cedula Acudiente</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Cedula" value="@Model.acudienteInfo.Cedula">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Telefono Acudiente</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Telefono" value="@Model.acudienteInfo.Telefono">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Direccion Acudiente</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Direccion" value="@Model.acudienteInfo.Direccion">
+            </div>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.successMessage))
+        {
+            <div class="row mb-3">
+                <div class="col-sm-9">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>@Model.successMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(Model.errorMessage))
+        {
+            <div class="row mb-3">
+                <div class="col-sm-9">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>@Model.errorMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="row mb-3">
+            <div class="offset-sm-3 col-sm-3 d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-sm-3 d-grid">
+                <a class="btn btn-outline-primary" role="button" href="/Acudiente/Index">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>

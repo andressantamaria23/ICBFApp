@@ -1,0 +1,38 @@
+﻿@page
+@model ICBFApp.Pages.AvanceAcademico.IndexModel
+@{
+    ViewData["Title"] = "Lista de Avance Academico";
+}
+
+<h2>Lista de Avance Academico</h2>
+
+<a class="btn btn-primary btn-sm" href="/AvanceAcademico/CrearAvance">Nuevo Avance Academico</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nivel</th>
+            <th>Notas</th>
+            <th>Descripcion</th>
+            <th>Niño</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listAvance)
+        {
+            <tr>
+                <td>@item.Id_Academico</td>
+                <td>@item.Nivel</td>
+                <td>@item.Notas</td>
+                <td>@item.Descripcion</td>
+                <td>@item.FK_Niño</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/AvanceAcademico/EditarAvance?Id_Academico=@item.Id_Academico">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="/AvanceAcademico/DeleteAvance?Id_Academico=@item.Id_Academico">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

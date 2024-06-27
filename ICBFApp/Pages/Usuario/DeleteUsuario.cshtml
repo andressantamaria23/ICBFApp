@@ -1,0 +1,13 @@
+﻿@page
+@model ICBFApp.Pages.Usuario.DeleteModel
+@{
+}
+<h2>Eliminar  Usuario</h2>
+
+<p>¿Estás seguro que deseas eliminar este Usuario?</p>
+
+<form method="post">
+    <input type="hidden" asp-for="Id_usuario" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-page="/Usuario/Index" class="btn btn-secondary">Cancelar</a>
+</form>

@@ -1,0 +1,63 @@
+﻿@page
+@model ICBFApp.Pages.AvanceAcademico.CrearAvanceModel
+@{
+}
+<div class="container">
+    <form method="POST">
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Nivel</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Nivel" value="@Model.academicoInfo.Nivel">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Notas</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Notas" value="@Model.academicoInfo.Notas">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Descripcion</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Descripcion" value="@Model.academicoInfo.Descripcion">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label-sm col-form-label">Niño</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="Niño" value="@Model.academicoInfo.FK_Niño">
+            </div>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.successMessage))
+        {
+            <div class="row mb-3">
+                <div class="col-sm-9">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>@Model.successMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(Model.errorMessage))
+        {
+            <div class="row mb-3">
+                <div class="col-sm-9">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>@Model.errorMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="row mb-3">
+            <div class="offset-sm-3 col-sm-3 d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-sm-3 d-grid">
+                <a class="btn btn-outline-primary" role="button" href="/AvanceAcademico/Index">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>

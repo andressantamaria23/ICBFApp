@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ICBFApp
+build_property.RootNamespace = ICBFApp
+build_property.ProjectDir = C:\Users\pc\Documents\SENA\Trimestre6\.Net\ICBFApp\ICBFApp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pc\Documents\SENA\Trimestre6\.Net\ICBFApp\ICBFApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Acudiente/CrearAcudiente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN1ZGllbnRlXENyZWFyQWN1ZGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Acudiente/DeleteAcudiente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN1ZGllbnRlXERlbGV0ZUFjdWRpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Acudiente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN1ZGllbnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Asistencia/CrearAsistencia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNpc3RlbmNpYVxDcmVhckFzaXN0ZW5jaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Asistencia/DeleteAsistencia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNpc3RlbmNpYVxEZWxldGVBc2lzdGVuY2lhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Asistencia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNpc3RlbmNpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/AvanceAcademico/CrearAvance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhbmNlQWNhZGVtaWNvXENyZWFyQXZhbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/AvanceAcademico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhbmNlQWNhZGVtaWNvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Jardines/CrearJardin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFyZGluZXNcQ3JlYXJKYXJkaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Jardines/DeleteJardin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFyZGluZXNcRGVsZXRlSmFyZGluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Jardines/EditarJardin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFyZGluZXNcRWRpdGFySmFyZGluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Jardines/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFyZGluZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/MadreComunitaria/CreateMadre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFkcmVDb211bml0YXJpYVxDcmVhdGVNYWRyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/MadreComunitaria/DeleteMadre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFkcmVDb211bml0YXJpYVxEZWxldGVNYWRyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/MadreComunitaria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFkcmVDb211bml0YXJpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Niño/CrearNiño.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmnDsW9cQ3JlYXJOacOxby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Niño/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmnDsW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Usuario/CrearUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xDcmVhclVzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Usuario/DeleteUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xEZWxldGVVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Documents/SENA/Trimestre6/.Net/ICBFApp/ICBFApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-b0j9d3jmi1

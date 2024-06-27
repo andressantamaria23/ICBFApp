@@ -1,0 +1,47 @@
+﻿@page
+@model ICBFApp.Pages.Niño.IndexModel
+@{
+}
+<br />
+<h2>Lista de Niños</h2>
+
+<a class="btn btn-primary btn-sm" href="/Niño/CrearNiño">Nuevo Niño</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>RH</td>
+            <td>Ciudad Nacimiento</td>
+            <td>Telefono</td>
+            <td>Direccion</td>
+            <td>Eps</td>
+            <td>Acudiente</td>
+            <td>Jardin</td>
+            <td>Madre Comunitaria</td>
+            <td>Acciones</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listniño)
+        {
+            <tr>
+                <td>@item.Id_niño</td>
+                <td>@item.nom_niño</td>
+                <td>@item.RH</td>
+                <td>@item.CiudadNacimiento</td>
+                <td>@item.Telefono</td>
+                <td>@item.Direccion</td>
+                <td>@item.EPS</td>
+                <td>@item.FK_Acudiente</td>
+                <td>@item.FK_Jardin</td>
+                <td>@item.FK_Madre</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Niño/Editar?Id_niño=@item.Id_niño">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="/Niño/DeleteNiño?Id_niño=@item.Id_niño">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
